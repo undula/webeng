@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="Autoren" content="Team-BBK">
+    <title>Übungsblatt 1</title>
+    <!--    <script src="./js/app.js" defer="true"></script> -->
+    <script data-main="js/appclient" src="./js/require.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/app.css">
+</head>
+
+<body>
+<!-- whole contain -->
+<div class="container">
+    <header class="header" id="head">
+        <h1>Plants</h1>
+    </header>
+
+    <!-- aside  -->
+    <aside>
+        <ul>
+            <li><a href="#"><h3 id="saveCounter" >Saved photos: 0</h3></a></li>
+            <li><a href="#"><h3>Liked photos</h3></a></li>
+            <li><a href="#"><h3>Add a photo</h3></a></li>
+            <li><a href="#"><h3>Links</h3></a></li>
+            <li><span id="more"><h3>MORE</h3></span></li>
+        </ul>
+    </aside>
+
+<!-- pin view -->
+    <main id="pin-list">
+        <script type="text/template" id="pin-template">
+            <img src="<%=src%>"/>
+            <span>"<%=title%>"</span>
+        </script>
+    </main>
+
+</div>
+</section>
+</div>
+<!-- footer  -->
+<footer>
+        <span>
+            <p> &copy; Plants<p>
+         </span>
+</footer>
+</div>
+<!-- modal window -->
+<div id="modal-window" class="modal">
+    <!-- closing button  -->
+    <span class="close">&times;</span>
+    <!-- the image which will be displayed -->
+    <img class="modal-content" id="img-mod">
+</div>
+</div>
+</body>
+
+</html>
